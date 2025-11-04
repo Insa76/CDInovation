@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynamic CVV | Protege tus pagos online</title>
+  <meta name="description" content="Tu CVV cambia cada 5 minutos. Si se filtra, es inútil. Protege tus compras online con Dynamic CVV." />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #0A0A0A;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      padding: 30px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #00A88E;
+    }
+
+    .cta-button {
+      padding: 12px 24px;
+      background-color: #00A88E;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .cta-button:hover {
+      background-color: #008c76;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #00A88E, #00D1B2);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #B3B3B3;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    /* Features */
+    .features {
+      padding: 80px 0;
+      background-color: #121212;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .feature-card {
+      background-color: #1E1E1E;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #373737;
+    }
+
+    .feature-card h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      color: #00A88E;
+    }
+
+    /* Waitlist */
+    .waitlist {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .waitlist h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .waitlist p {
+      color: #B3B3B3;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .email-form {
+      display: flex;
+      max-width: 500px;
+      margin: 0 auto;
+      gap: 10px;
+    }
+
+    .email-form input {
+      flex: 1;
+      padding: 14px;
+      border: 1px solid #373737;
+      border-radius: 8px;
+      background-color: #1E1E1E;
+      color: white;
+      font-size: 16px;
+    }
+
+    .email-form button {
+      padding: 14px 24px;
+      background-color: #00A88E;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: #B3B3B3;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero, .features, .waitlist {
+      animation: fadeIn 0.8s ease-in;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Dynamic CVV</div>
+        <button class="cta-button">Descargar App</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>El CVV que cambia cada 5 minutos</h1>
+      <p>Si tu número de seguridad se filtra, será inútil minutos después. Dynamic CVV genera un nuevo CVV dinámico automáticamente, protegiendo tus compras online.</p>
+      <button class="cta-button">Únete a la beta</button>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 36px; margin-bottom: 20px;">¿Por qué Dynamic CVV?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>🔐 Seguridad avanzada</h3>
+          <p>El CVV cambia cada 5 minutos, como un token 2FA. Aunque se filtre, será inútil al instante.</p>
+        </div>
+        <div class="feature-card">
+          <h3>📱 Fácil de usar</h3>
+          <p>Accede a tu CVV desde la app móvil o extensión del navegador. Copia y pega en segundos.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🔄 Compatible con todo</h3>
+          <p>Funciona con cualquier tarjeta y banco. No necesitas cambiar de emisor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section class="waitlist">
+    <div class="container">
+      <h2>¿Quieres probarlo?</h2>
+      <p>Únete a la lista de espera y sé de los primeros en recibir la app. Sin spam, solo novedades.</p>
+      <form class="email-form" onsubmit="handleSubmit(event)">
+  <input type="email" id="email-input" placeholder="Tu correo electrónico" required />
+  <button type="submit">Unirse a la beta</button>
+</form>
+
+<script>
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const email = document.getElementById("email-input").value;
+    const button = e.target.querySelector("button");
+    const originalText = button.textContent;
+
+    try {
+      button.disabled = true;
+      button.textContent = "Enviando...";
+
+      const response = await fetch("http://localhost:8001/api/waitlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message);
+        document.getElementById("email-input").value = "";
+      } else {
+        alert("Error: " + data.detail);
+      }
+    } catch (error) {
+      alert("No se pudo conectar al servidor. Intenta más tarde.");
+      console.error(error);
+    } finally {
+      button.disabled = false;
+      button.textContent = originalText;
+    }
+  }
+</script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Dynamic CVV. Todos los derechos reservados.</p>
+      <p>Hecho con ❤️ para proteger tus pagos online.</p>
+    </div>
+  </footer>
+</body>
+</html>

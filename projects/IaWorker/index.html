@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IA Worker - Plataforma de Gestión Documental con IA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    /* Paleta de colores */
+    :root {
+      --primary: #003366;
+      --secondary: #0066cc;
+      --light: #f8fafc;
+      --dark: #001f33;
+      --accent: #ffeb3b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card i {
+      font-size: 3rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+
+    .btn:hover {
+      background: var(--secondary);
+      color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark);
+      color: white;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .feature-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><i class="fas fa-robot"></i> IA Worker</h1>
+    <p>Tu asistente inteligente para gestión documental empresarial</p>
+  </header>
+
+  <!-- Sección: Funcionalidades -->
+  <div class="container">
+    <section>
+      <h2>¿Qué ofrece IA Worker?</h2>
+      <div class="features">
+        <div class="feature-card">
+          <i class="fas fa-file-alt"></i>
+          <h3>Gestión Documental</h3>
+          <p>Sube, organiza y busca documentos por área: administrativa, contable y jurídica.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-lock"></i>
+          <h3>Seguridad y Roles</h3>
+          <p>Acceso controlado por roles, auditoría y permisos granulares.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-brain"></i>
+          <h3>Inteligencia Artificial</h3>
+          <p>Pregunta a tus documentos, genera contratos y analiza contenido automáticamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Áreas -->
+    <section>
+      <h2>Áreas de Trabajo</h2>
+      <div class="features">
+        <div class="feature-card">
+          <i class="fas fa-building"></i>
+          <h3>Administrativa</h3>
+          <p>Correspondencia, informes, gestión interna y más.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-calculator"></i>
+          <h3>Contable</h3>
+          <p>Facturación, nómina, reportes y análisis financiero.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-gavel"></i>
+          <h3>Jurídica</h3>
+          <p>Contratos, dictámenes, revisión legal y cumplimiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>¿Listo para comenzar?</h2>
+      <p>Inicia sesión ahora y potencia tu productividad con IA.</p>
+      <a href="http://localhost:8501" class="btn">Ir a la App</a>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IA Worker. Desarrollado por Insa76. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

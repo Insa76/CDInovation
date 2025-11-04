@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHEVIR - Ropa con actitud</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f5f5f5;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      filter: brightness(0.7);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #ff3e6c;
+      color: white;
+      box-shadow: 0 4px 12px rgba(255, 62, 108, 0.3);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Sección de valor */
+    .features {
+      padding: 6rem 2rem;
+      background-color: white;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 3rem;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .feature {
+      font-size: 1.1rem;
+      color: #6b7280;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin: 1rem 0;
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Chatbot Demo */
+    .chat-demo {
+      padding: 6rem 2rem;
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+    }
+
+    .chat-demo h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .chat-demo p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+    }
+
+    .chat-bubble {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #2d2d2d;
+      border-radius: 1rem;
+      padding: 2rem;
+      display: inline-block;
+      text-align: left;
+    }
+
+    .message {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: flex-start;
+    }
+
+    .message.user {
+      justify-content: flex-end;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+
+    .bubble {
+      padding: 0.75rem;
+      border-radius: 18px;
+      max-width: 80%;
+    }
+
+    .bubble.bot {
+      background-color: #3b3b3b;
+      color: white;
+    }
+
+    .bubble.user {
+      background-color: #ff3e6c;
+      color: white;
+    }
+
+    /* CTA Final */
+    .cta {
+      padding: 6rem 2rem;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      color: #6b7280;
+      margin-bottom: 2rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 3rem 2rem;
+      background-color: #1a1a1a;
+      color: #a1a1aa;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CHEVIR</h1>
+      <p>Ropa con actitud. Moda con inteligencia.</p>
+      <a href="#shop" class="btn btn-primary">Ver colección</a>
+      <a href="#demo" class="btn btn-secondary">Probar demo</a>
+    </div>
+  </section>
+
+  <!-- Sección de valor -->
+  <section class="features">
+    <h2>¿Por qué Chevir?</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon">👕</div>
+        <h3>Estilo con actitud</h3>
+        <p>Diseños únicos que rompen moldes. Para quienes no temen al futuro.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">💬</div>
+        <h3>IA que te conoce</h3>
+        <p>Recomendaciones personalizadas por nuestro chatbot con memoria.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🖼️</div>
+        <h3>Pruébate la ropa</h3>
+        <p>Usa IA para ver cómo te queda cualquier prenda antes de comprar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo del chatbot -->
+  <section class="chat-demo" id="demo">
+    <h2>Habla con Chevi</h2>
+    <p>Nuestro asistente 24/7 que aprende tus gustos y te recomienda lo mejor.</p>
+    <div class="chat-bubble">
+      <div class="message">
+        <img src="https://via.placeholder.com/40" alt="Chevi" class="avatar" id="chevi-avatar">
+        <div class="bubble bot">
+          ¡Hola! Soy Chevi, tu asistente de moda. ¿En qué puedo ayudarte hoy?
+        </div>
+      </div>
+      <div class="message user">
+        <div class="bubble user">
+          ¿Qué me recomendás para el día a día?
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta" id="shop">
+    <h2>¿Listo para vestir con actitud?</h2>
+    <p>Únete a la revolución de la moda inteligente.</p>
+    <a href="https://tu-tienda.com" class="btn btn-primary">Comienza ahora</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Chevir. Todos los derechos reservados.</p>
+    <p>Ropa con actitud • IA que te conoce • Moda del futuro</p>
+  </footer>
+
+  <!-- Script opcional: cambia la imagen del avatar por una real -->
+  <script>
+    // Si tienes un avatar real, reemplaza el placeholder
+    const avatar = document.getElementById('chevi-avatar');
+    if (avatar) {
+      avatar.src = '/images/chevi-avatar.png'; // Cambia si está en otra ruta
+      avatar.onerror = () => {}; // No muestra error si no existe
+    }
+  </script>
+
+</body>
+</html>

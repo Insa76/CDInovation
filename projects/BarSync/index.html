@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BarSync - Sistema de Gestión para Bares</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .hero-gradient { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-yellow-600">BarSync</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="font-medium hover:text-yellow-600 transition">Funcionalidades</a>
+          <a href="#demo" class="font-medium hover:text-yellow-600 transition">Demo</a>
+          <a href="#contact" class="font-medium hover:text-yellow-600 transition">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-gradient pt-24 pb-16 text-white">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Control total para tu bar
+      </h1>
+      <p class="text-xl mb-8 max-w-3xl mx-auto">
+        BarSync es el sistema completo para gestionar inventario, recetas, ventas y análisis. 
+        Optimiza tu bar, reduce pérdidas y toma decisiones con datos reales.
+      </p>
+      <div class="space-x-4">
+        <a href="#demo" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition">
+          Ver Demo
+        </a>
+        <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-gray-800 font-medium py-3 px-8 rounded-full transition">
+          Contactar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">¿Qué puedes hacer con BarSync?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Feature 1 -->
+        <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 text-blue-600 rounded-full mb-4">
+            <i data-feather="box" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Inventario Inteligente</h3>
+          <p class="text-gray-600">Controla tus insumos, establece alertas de bajo stock y registra entradas/salidas automáticamente.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-full mb-4">
+            <i data-feather="book" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Recetas Digitales</h3>
+          <p class="text-gray-600">Crea y gestiona recetas con ingredientes, costos y fotos. Ideal para estandarizar tragos.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="text-center p-6 rounded-lg hover:shadow-lg transition">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-purple-100 text-purple-600 rounded-full mb-4">
+            <i data-feather="bar-chart" class="w-8 h-8"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Análisis en Tiempo Real</h3>
+          <p class="text-gray-600">Gráficas de ventas, productos más pedidos y reportes de cierre de caja automáticos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo / CTA -->
+  <section id="demo" class="py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bold mb-6">¿Quieres ver cómo funciona?</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Accede a una demo segura con credenciales de prueba. Explora todas las funciones sin compromiso.
+      </p>
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-8 rounded-full transition inline-flex items-center gap-2">
+        <i data-feather="log-in" class="w-5 h-5"></i>
+        Acceder a Demo
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6">¿Listo para probarlo en tu bar?</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Escríbeme por WhatsApp o correo para una presentación personalizada.
+      </p>
+      <div class="space-y-4">
+        <p><strong>📧 Email:</strong> contacto@barsync.com</p>
+        <p><strong>📱 WhatsApp:</strong> +54 9 11 1234-5678</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p>&copy; 2025 BarSync. Todos los derechos reservados.</p>
+      <p class="text-gray-400 mt-2">Hecho con 💡 para emprendedores del rubro.</p>
+    </div>
+  </footer>
+
+  <!-- Feather Icons Script -->
+  <script>
+    feather.replace();
+  </script>
+
+</body>
+</html>

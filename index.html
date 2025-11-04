@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Carlos Diego — Ayudo a empresas a crecer con tecnología inteligente.">
+    <title>Carlos Diego — Desarrollador Full Stack + IA</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- HERO 
+    <header class="hero" id="inicio">
+    <div class="slat-container" id="slatContainer"></div>
+    <div class="hero-content">
+        <img src="/images/C1.jpg" alt="" class="hero-logo">
+        <h1 id="typed-text"></h1>
+        <div class="flip-hero-text" id="flipHeroText"></div>
+        <p>"Conectando ideas con inteligencia artificial"</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+    </div>
+</header>-->
+
+<!-- HERO CON VIDEO EN BUCLE -->
+<header class="hero" id="inicio">
+     <div class="hero-grid">
+        <div class="hero-animation">
+         <video autoplay muted loop playsinline id="heroVideo">
+         <source src="images/video.mp4" type="video/mp4">
+         Tu navegador no soporta videos HTML5.
+         </video>
+        </div>
+       <div class="hero-text">
+            <h1 id="typed-text"></h1>
+            <h2>Desarrollador Full Stack + Integraciones de IA</h2>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+    </div>
+</header>
+
+    <!-- SERVICIOS -->
+<!--<section class="services" id="servicios">
+    <h2>Servicios</h2>-->
+    <!--<div class="services-grid">
+        <div class="service-visual">
+        <video autoplay muted loop playsinline id="SectionVideo">
+         <source src="images/Servicios.mp4" type="video/mp4">
+         Tu navegador no soporta videos HTML5.
+         </video>
+        <!-- Consultoría Técnica 
+        <div class="card tech-card">
+            <h3>Consultoría Técnica</h3>
+            <p>Asesoramiento para transformar ideas en realidades digitales con IA.</p> 
+            <h3>Integraciones de IA</h3>
+            <p>Soluciones personalizadas con inteligencia artificial para tu negocio.</p> 
+            <h3>Desarrollo Full Stack</h3>
+            <p>Aplicaciones web modernas y escalables con tecnologías líderes.</p>
+            
+            <img src="images/cti.jpeg" alt="Consultoría Técnica" class="service-image" width="400px">        
+        </div>
+        </div>
+        
+    </div>
+</section>-->
+
+    <!-- SERVICIOS (solo video animado) -->
+<section class="services" id="servicios">
+    <video 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        class="services-video"
+    >
+        <source src="images/Servicios.mp4" type="video/mp4">
+        Tu navegador no soporta videos.
+    </video>
+</section>
+
+    <!-- PROYECTOS -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <h2>Proyectos Destacados</h2>
+            <p class="lead">Resultados reales para clientes reales.</p>
+
+    <div class="project-cards">
+        <div class="cardp">
+            <img src="/projects/passhub/passhub.jpeg" alt="PassHub - Gestión de Eventos">
+            <h3>PassHub</h3>
+            <p>Plataforma de tickets con validación QR y geolocalización en tiempo real.</p>
+        </div>
+        <div class="cardp">
+            <img src="/projects/BarSync/barsync.jpeg" alt="BarSync - Gestión para Bares" >
+            <h3>BarSync</h3>
+            <p>Sistema de gestión para bares con métricas en vivo y control de inventario.</p>
+        </div>
+        <div class="cardp">
+            <img src="projects/cvv/cvv.jpeg" alt="CVV Dinámico - Seguridad Financiera" >
+            <h3>CVV Dinámico</h3>
+            <p>Tarjeta de crédito con CVV cambiante para transacciones seguras.</p>
+        </div>
+        <div class="cardp">
+            <img src="projects/TiendaRopa/tienda.jpeg" alt="CVV Dinámico - Seguridad Financiera" >
+            <h3>Tienda de Ropa</h3>
+            <p>Ropa con actitud. Moda con inteligencia.</p>
+        </div>
+        <div class="cardp">
+            <img src="projects/TiendaRopa/tienda.jpeg" alt="CVV Dinámico - Seguridad Financiera" >
+            <h3>CVV Dinámico</h3>
+            <p>Tarjeta de crédito con CVV cambiante para transacciones seguras.</p>
+        </div>
+        
+    </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Sistema de Recomendación IA</h3>
+                        <p><strong>+35% conversiones</strong> para e-commerce de moda.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Dashboard Predictivo</h3>
+                        <p><strong>-22% costos operativos</strong> en logística.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINI CHAT IA (EFECTO FLIP COMO CARTELES DE AEROPUERTO) -->
+<section class="ai-chat" id="ai-chat">
+    <h2>Consulta con mi IA</h2>
+    <div class="chat-controls">
+        <input type="text" id="userInput" placeholder="Describe tu proyecto..." />
+        <button id="sendBtn">Enviar</button>
+    </div>
+    <div class="flip-display" id="flipDisplay"></div>
+    <p class="chat-disclaimer">
+        <em>💡 Demo: respuestas simuladas con efecto visual tipo cartel mecánico.</em>
+    </p>
+</section>
+
+    <!-- CONTACTO -->
+<section class="contact" id="contacto">
+    <div class="container">
+        <h2>¿Listo para transformar tu idea en realidad?</h2>
+        <p class="lead">Agendá una llamada gratuita de 30 minutos. Sin compromiso.</p>
+        <div class="contact-content">
+            <!-- Formulario -->
+            <form id="contactForm" class="contact-form">
+                <input type="text" name="nombre" placeholder="Tu nombre" required />
+                <input type="email" name="email" placeholder="Tu email" required />
+                <textarea name="mensaje" placeholder="Contame sobre tu proyecto..." required></textarea>
+                <button type="submit" class="btn btn-primary">Enviar y agendar</button>
+            </form>
+
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="/images/mail.svg" height="24" width="24" alt="Email">
+                    <a href="mailto:carlos@tudominio.com">carlos@tudominio.com</a>
+                </div>
+                <div class="contact-item">
+                    <img src="/images/wp.svg" height="24" width="24" alt="WhatsApp">
+                    <a href="https://wa.me/5493624745181" target="_blank">Enviar mensaje por WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Desarrollo Full Stack -->
+        <div class="card tech-card">
+            <h3>Tecnologías de Desarrollo</h3>
+           <div class="stack-icons">
+            <img src="images/stack-icons/react.png" alt="React" title="React" >
+            <img src="images/stack-icons/node.png" alt="Node.js" title="Node.js" >
+            <img src="images/stack-icons/python.png" alt="Python" title="Python" >
+            <img src="images/stack-icons/mongo.png" alt="MongoDB" title="MongoDB" >
+            <img src="images/stack-icons/tensor.png" alt="TensorFlow" title="TensorFlow" >
+            <img src="images/stack-icons/docker.png" alt="TensorFlow" title="Docker" >
+            
+          </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <!-- Redes sociales -->
+            <div class="social-links">
+                <h3>Sígueme</h3>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
+                        <img src="/images/linkedin.svg" height="32" width="32" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
+                        <img src="/images/github.svg" height="32" width="32" alt="GitHub">
+                    </a>
+                    <a href="https://twitter.com/tu-usuario" target="_blank" aria-label="Twitter/X">
+                        <img src="/images/twitter.svg" height="32" width="32" alt="Twitter">
+                    </a>
+                    <!-- Agregá más si querés -->
+                </div>
+            </div>
+        <div class="container-footer">
+            <p>© 2025 Carlos Diego. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

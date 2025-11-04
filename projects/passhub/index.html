@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PassHub - Tu puerta a los mejores eventos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css  " rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css  " rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0066ff;
+      --dark: #111;
+      --gray: #f8f9fa;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .btn-cta {
+      background: var(--primary);
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    .btn-cta:hover {
+      background: #0052cc;
+      transform: translateY(-2px);
+      transition: all 0.3s;
+    }
+    .section {
+      padding: 80px 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      color: var(--primary);
+    }
+    .card-feature {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card-feature:hover {
+      transform: translateY(-10px);
+    }
+    .card-feature i {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .testimonials {
+      background: var(--gray);
+    }
+    .testimonial {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin: 20px;
+    }
+    .footer {
+      background: var(--dark);
+      color: #aaa;
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+    .footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>🎟️ PassHub</h1>
+      <p>Tu puerta a los mejores eventos culturales, recitales, festivales y experiencias únicas. Compra entradas, organiza eventos y valida accesos con tecnología QR y geolocalización.</p>
+      <div>
+        <a href="index.html" class="btn-cta">Comprar entradas</a>
+        <a href="organizer-register.html" class="btn-cta">Organizá tu evento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegir PassHub?</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card-feature">
+            <i class="fas fa-ticket-alt"></i>
+            <h4>Entradas digitales</h4>
+            <p>QR, código único y validación en tiempo real. Sin papel, sin fraudes.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-feature">
+            <i class="fas fa-chart-line"></i>
+            <h4>Métricas en vivo</h4>
+            <p>Asistentes, ventas, productos más vendidos. Todo en tiempo real para organizadores.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card-feature">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Seguro y escalable</h4>
+            <p>Autenticación segura, correos automáticos, recuperación de contraseña y más.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA ORGANIZADORES -->
+  <section class="section" style="background: var(--gray);">
+    <div class="container">
+      <h2 class="section-title">¿Organizás eventos?</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Dashboard avanzado en tiempo real</h3>
+          <p>Monitoreá asistentes, ventas, productos más vendidos y ubicación de validaciones.</p>
+          <ul>
+            <li>📊 Evolución de ingresos por hora</li>
+            <li>🛍️ Ventas por puesto y producto</li>
+            <li>🔔 Notificaciones en tiempo real</li>
+            <li>📤 Exporta a PDF o CSV</li>
+          </ul>
+          <a href="organizer-register.html" class="btn-cta">Registrate como organizador</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://via.placeholder.com/500x300?text=Dashboard+PassHub" alt="Dashboard" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.2);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">Lo que dicen nuestros usuarios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Organicé mi primer festival con PassHub y fue increíble. Todo funcionó perfecto, desde las entradas hasta el validador."</p>
+            <strong>— Martina, organizadora</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"Compré mi entrada en 2 minutos. El QR funcionó a la perfección. ¡Volveré a usar PassHub!"</p>
+            <strong>— Lucas, asistente</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <p>"La integración con Mercado Pago y las notificaciones en vivo me dieron total control del evento."</p>
+            <strong>— Diego, productor cultural</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section" style="background: var(--primary); color: white; text-align: center;">
+    <div class="container">
+      <h2>¿Listo para vivir la próxima experiencia?</h2>
+      <p>Únete a miles de personas que ya usan PassHub para disfrutar y organizar eventos únicos.</p>
+      <a href="index.html" class="btn-cta" style="background: white; color: var(--primary);">Ver eventos disponibles</a>
+    </div>
+  </section>
+
+  <!-- TECNOLOGÍAS USADAS -->
+<section class="section" style="background: #0a0a0a; color: white; text-align: center;">
+    <div class="container">
+        <h2 class="section-title" style="color: #00ffcc;">Tecnologías Utilizadas</h2>
+        <div class="row justify-content-center">
+            <div class="col-auto mx-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" title="React">
+            </div>
+            <div class="col-auto mx-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" title="Node.js">
+            </div>
+            <div class="col-auto mx-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB" title="MongoDB">
+            </div>
+            <div class="col-auto mx-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="Bootstrap" title="Bootstrap">
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: left; max-width: 1000px; margin: 0 auto;">
+        <div>
+          <h3 style="color: white; margin: 0 0 15px;">PassHub</h3>
+          <p>Tu plataforma de gestión de eventos, entradas y experiencias únicas.</p>
+        </div>
+        <div>
+          <h4 style="color: white; margin: 0 0 15px;">Enlaces</h4>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 8px;"><a href="index.html">Eventos</a></li>
+            <li style="margin-bottom: 8px;"><a href="organizer-register.html">Organizadores</a></li>
+            <li style="margin-bottom: 8px;"><a href="login.html">Iniciar sesión</a></li>
+            <li style="margin-bottom: 8px;"><a href="register.html">Regístrate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: white; margin: 0 0 15px;">Contacto</h4>
+          <p>✉️ hola@passhub.com<br>📞 +54 9 11 2345-6789</p>
+        </div>
+      </div>
+      <div style="margin-top: 40px; color: #777; font-size: 0.9rem;">
+        &copy; <span id="year">2025</span> PassHub. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
