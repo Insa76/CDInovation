@@ -84,21 +84,22 @@ img {
 
 /* --- VIDEO EN SECCIÓN SERVICIOS --- */
 .services {
-  padding: 60px 0;
+  padding: 0px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black; /* Fondo oscuro */
+  height: 600px;
 }
 
-.services-video {
-  width: 100%;
-  max-width: 1000px; /* Ajustá este valor según el tamaño deseado */
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
+//.services-video {
+//  width: 100%;
+//  max-width: 1000px; /* Ajustá este valor según el tamaño deseado */
+//  height: 500px;
+//  display: block;
+//  border-radius: 12px;
+//  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+//}
 
 section {
     padding-top: 5px;  
@@ -955,6 +956,7 @@ section h2 {
     flex-direction: column;
     gap: 16px;
     margin-top: 30px;
+    margin-left: 30px;
     
 }
 
