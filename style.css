@@ -34,17 +34,17 @@ body {
     background-color: rgba(0, 0, 0, 1);
     background-image: url('images/matrix.jpeg'); 
     width: 100%;
-    //height: 100vh; /* ← Ocupa el 100% de la altura de la ventana */
     background-size: cover;    /* ← Cubre todo el espacio SIN dejar bordes */
     background-position: center;
     background-repeat: no-repeat;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    //padding: 0 0px;
     text-align: center;
+    justify-content: center;
 }
 
 .container-footer {
@@ -98,8 +98,38 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black; /* Fondo oscuro */
+  //ckground: black; /* Fondo oscuro */
   height: 500px;
+}
+
+.visual {
+  background: black; /* Fondo oscuro */
+  width: 2000px;
+  height: 130px; 
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.visual-projects {
+  background: black; /* Fondo oscuro */
+  height: 130px; 
+  color: #e7ba77d5;
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+
+.visual-chat {
+  background: black; /* Fondo oscuro */
+  height: 130px; 
+  color: #e7ba77d5;
+  font-size: 1.1rem;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
 }
 
 //.services-video {
@@ -117,12 +147,21 @@ section {
 }
 section h2 {
     font-size: 2.2rem;
+    padding-top: 30px;
     margin-bottom: 16px;
     color: #e7ba77d5;
 }
+
+section h1 {
+    font-size: 2.2rem;
+    padding-top: 30px;
+    margin-bottom: 16px;
+    color: #e7ba77d5;
+}
+
 .lead {
-    color: #b5b7b9ff;
-    font-size: 1.1rem;
+    color: #a3a3a3ff;
+    font-size: 1.3rem;
     max-width: 700px;
     margin: 0 auto 40px;
     font-family: 'Mina';
@@ -133,7 +172,6 @@ section h2 {
   padding: 72px 20px 48px;
   text-align: center;
 }
-
 
 .contact h2 {
   margin-bottom: 24px;
@@ -158,26 +196,26 @@ section h2 {
 .contact textarea {
   width: 100%;
   padding: 14px;
-  border-radius: 8px;
-  //border: 1px solid  #ff9900d9; /* Borde azul neón sutil */
+  border-radius: 6px;
   background: rgba(20, 20, 20, 0.85); /* Fondo azul muy claro */
-  color: #b5b7b9ff;
+  color: #a3a3a3ff;
   font-family: 'Mina';
   font-size: 1rem;
   transition: all 0.3s ease;
+  border: 1px solid rgba(245, 141, 4, 0.62);
 }
 
 .contact input::placeholder,
 .contact textarea::placeholder {
-  color: var(--muted);
+  color: rgba(97, 98, 99, 1);
 }
 
 .contact input:focus,
 .contact textarea:focus {
   outline: none;
-  border-color: var(--neon1); /* Al hacer foco, cambia a verde neón */
-  box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.2);
-  background: rgba(77, 161, 255, 0.06);
+  //border-color: var(--neon1); /* Al hacer foco, cambia a verde neón */
+  //box-shadow: 0 0 0 3px rgba(255, 174, 0, 0.2);
+  //background: rgba(0, 0, 0, 0.88);
 }
 
 .contact textarea {
@@ -191,15 +229,13 @@ section h2 {
   margin-top: 8px;
   margin-bottom: 20px;
   background: rgba(20, 20, 20, 0.85);
-  //border: 1px solid rgba(241, 178, 5, 0.97);
+  border: 1px solid rgba(245, 141, 4, 0.62);
   font-weight: 700;
   font-family: 'Mina';
-  color: #b5b7b9ff;
+  color: #a3a3a3ff;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 6px;
 }
-
-
 
 /* Feedback del formulario */
 .form-feedback {
@@ -215,7 +251,7 @@ section h2 {
 .hero {
   position: relative;
   min-height: 55vh;
-  background-color: #ff9900d9;
+  //ckground-color: #ff9900d9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,13 +291,15 @@ section h2 {
 }
 
 .hero-text {
-  color: #000000ff;
-  //padding: 20px;
+  color: #aca8a8ff;
+  background-color: rgba(0, 0, 0, 0.56);
+  border-radius: 8px;
+  
 }
 
 .hero-text h1 {
   font-family: 'Orbitron', sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin: 0 0 12px;
   letter-spacing: 0.6px;
 }
@@ -440,8 +478,8 @@ section h2 {
 .tech-card p {
     color: var(--muted);
     margin-bottom: 18px;
-    font-size: 0.95rem;
-    color: #808080ff;
+    font-size: 1.2rem;
+    color: #a3a3a3ff;
     font-family: 'Mina';
 }
 
@@ -679,15 +717,17 @@ section h2 {
 .projects {
     padding: 50px 0px;
     text-align: center;
-    color: #808080ff;
-    //border-top:2px solid  #ff9900d9;
-    
+    color: #a3a3a3ff;
+    font-size: 1.2rem;
 }
-.projects h2 {
+
+.projects h3 {
     color: var(--neon1);
     margin-bottom: 32px;
-    color: #e7ba77d5;
+    color: #a3a3a3ff;
+    font-size: 1.8rem;
 }
+
 .project-cards {
     display: flex;
     flex-wrap: wrap;
@@ -729,12 +769,12 @@ section h2 {
 }
 .cardp h3 {
     margin: 20px 20px 12px;
-    color: var(--neon1);
+    color: #a3a3a3ff;
     font-size: 1.3rem;
 }
 .cardp p {
     margin: 0 20px 20px;
-    color: var(--muted);
+    color: #a3a3a3ff;
     font-size: 0.95rem;
     font-family: 'Mina';
 }
