@@ -32,6 +32,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color: #6c6d6eff;
     background-color: rgba(0, 0, 0, 1);
+    background-image: url('images/matrix.jpeg'); 
     width: 100%;
     //height: 100vh; /* ← Ocupa el 100% de la altura de la ventana */
     background-size: cover;    /* ← Cubre todo el espacio SIN dejar bordes */
@@ -55,12 +56,12 @@ body {
 }
 
 .footer {
-    background-image: url('images/matrix.jpeg'); 
-    border-top: 8px solid  #ff9900d9;
+    //background-image: url('images/matrix.jpeg'); 
+    //border-top: 8px solid  #ff9900d9;
 }
 
 .footer-overlay {
-    background-color: rgba(0, 0, 0, 0.44); /* Ajusta la opacidad según sea necesario */
+    //background-color: rgba(0, 0, 0, 0.44); /* Ajusta la opacidad según sea necesario */
     
 }
 
@@ -132,9 +133,7 @@ section h2 {
   padding: 72px 20px 48px;
   text-align: center;
 }
-  //border-bottom:2px solid  #ff9900d9;
-  
-}
+
 
 .contact h2 {
   margin-bottom: 24px;
@@ -160,8 +159,8 @@ section h2 {
   width: 100%;
   padding: 14px;
   border-radius: 8px;
-  border: 1px solid  #ff9900d9; /* Borde azul neón sutil */
-  background: rgba(8, 8, 8, 0.53); /* Fondo azul muy claro */
+  //border: 1px solid  #ff9900d9; /* Borde azul neón sutil */
+  background: rgba(20, 20, 20, 0.85); /* Fondo azul muy claro */
   color: #b5b7b9ff;
   font-family: 'Mina';
   font-size: 1rem;
@@ -191,8 +190,8 @@ section h2 {
   padding: 14px 24px;
   margin-top: 8px;
   margin-bottom: 20px;
-  background: rgba(20, 20, 20, 0.67);
-  border: 1px solid rgba(241, 178, 5, 0.97);
+  background: rgba(20, 20, 20, 0.85);
+  //border: 1px solid rgba(241, 178, 5, 0.97);
   font-weight: 700;
   font-family: 'Mina';
   color: #b5b7b9ff;
@@ -222,7 +221,7 @@ section h2 {
   justify-content: center;
   overflow: hidden;
   //padding: 0;
-
+  background-image: url('images/matrix.jpeg'); 
 }
 
 .hero-grid {
@@ -434,8 +433,8 @@ section h2 {
 .tech-card h3 {
     margin: 0 0 24px;
     color: var(--neon1);
-    font-size: 1.3rem;
-    color: #808080ff;
+    font-size: 1.8rem;
+    color: #e7c566ea;
 }
 
 .tech-card p {
@@ -467,7 +466,6 @@ section h2 {
     opacity: 0.9;
     transition: all 0.3s ease;
     border-radius: 4px;
-    //border: 1px solid rgba(41, 131, 204, 1);
     align-items: center;
 }
 
@@ -520,7 +518,7 @@ section h2 {
 }
 
 .stack-icons img {
-  height: 40px; /* Tamaño consistente */
+  height: 60px; /* Tamaño consistente */
   width: auto;
   filter: grayscale(0.1);
   opacity: 0.95;
@@ -716,7 +714,7 @@ section h2 {
     overflow: hidden;
     width: 200px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color:  rgba(0, 0, 0, 0.41);
+    background-color:  rgba(20, 20, 20, 0.85);
 }
 .cardp:hover {
     transform: translateY(-8px);
@@ -774,7 +772,7 @@ section h2 {
   padding: 14px;
   border-radius: 8px;
   border: 1px solid rgba(247, 222, 4, 0.62);
-  background: rgba(20, 20, 20, 0.67);
+  background:rgba(20, 20, 20, 0.85);
   
   color: white;
   font-family: 'Mina';
@@ -782,7 +780,7 @@ section h2 {
 .chat-controls button {
   padding: 14px 24px;
   border-radius: 8px;
-  background: rgba(20, 20, 20, 0.67);
+  background: rgba(20, 20, 20, 0.85);
   color: rgba(182, 182, 182, 1);
   border: 1px solid rgba(245, 170, 9, 0.97);
   font-weight: 700;
@@ -1027,8 +1025,8 @@ section h2 {
 }
 
 .social-icon {
-  width: 60px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   opacity: 1;
   transition: transform 0.3s ease, opacity 0.3s ease;
   border-radius: 8px;
@@ -1066,5 +1064,5 @@ section h2 {
 .social-item:hover .social-tooltip {
   opacity: 1;
   visibility: visible;
-  transform: translateY(-150%) translateX(-50%);
+  transform: translateY(-200%) translateX(-50%);
 }
