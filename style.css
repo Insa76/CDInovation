@@ -51,7 +51,16 @@ body {
     margin: 0 auto;
     padding-top: 50px;
     text-align: center;
-    color: #b5b7b9ff;
+    color: #818283ff; 
+}
+
+.footer {
+    background-image: url('images/matrix.jpeg'); 
+    border-top: 8px solid  #ff9900d9;
+}
+
+.footer-overlay {
+    background-color: rgba(0, 0, 0, 0.44); /* Ajusta la opacidad según sea necesario */
     
 }
 
@@ -84,11 +93,12 @@ img {
 
 /* --- VIDEO EN SECCIÓN SERVICIOS --- */
 .services {
-  padding: 0px 0;
+  padding:  40px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: black; /* Fondo oscuro */
+  height: 500px;
 }
 
 //.services-video {
@@ -101,13 +111,13 @@ img {
 //}
 
 section {
-    padding-top: 5px;  
-    
+    padding-top: 5px;
+   
 }
 section h2 {
     font-size: 2.2rem;
     margin-bottom: 16px;
-    color: #f7f7f7d5;
+    color: #e7ba77d5;
 }
 .lead {
     color: #b5b7b9ff;
@@ -121,7 +131,8 @@ section h2 {
 .contact {
   padding: 72px 20px 48px;
   text-align: center;
-  border-bottom:2px solid  #ff9900d9;
+}
+  //border-bottom:2px solid  #ff9900d9;
   
 }
 
@@ -366,9 +377,6 @@ section h2 {
     position: relative;
     overflow: hidden;
     background-color:  rgba(0, 0, 0, 0);
-    //background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
-    //border: 2px solid rgba(0, 0, 0, 0.62);
-    //background: url('images/cti.jpeg') center;
     padding: 24px;
     margin-top: 24px;
     border-radius: 16px;
@@ -383,7 +391,7 @@ section h2 {
     //background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
     background-color:  rgba(0, 0, 0, 0);
     //border: 2px solid rgba(0, 0, 0, 0.62);
-    box-shadow: rgba(241, 189, 46, 0.63);
+    box-shadow: rgba(241, 75, 46, 0.73);
     padding: 24px;
     border-radius: 4px;
     justify-content: center;
@@ -674,13 +682,13 @@ section h2 {
     padding: 50px 0px;
     text-align: center;
     color: #808080ff;
-    border-top:2px solid  #ff9900d9;
+    //border-top:2px solid  #ff9900d9;
     
 }
 .projects h2 {
     color: var(--neon1);
     margin-bottom: 32px;
-    color: #f7f7f7d5;
+    color: #e7ba77d5;
 }
 .project-cards {
     display: flex;
@@ -712,8 +720,8 @@ section h2 {
 }
 .cardp:hover {
     transform: translateY(-8px);
-    box-shadow: 0 14px 40px rgba(255, 255, 255, 1);
-    border-color: rgba(77, 160, 255, 0.4);
+    box-shadow: 0 14px 40px rgba(250, 141, 17, 0.77);
+    border-color: rgba(250, 123, 4, 0.81);
 }
 .cardp img {
     width: 100%;
@@ -740,8 +748,6 @@ section h2 {
     gap: 24px;
     margin-top: 24px;
     align-items: center;
-    //background: url('images/cti.jpeg') center;
-    //backgroundRepeat: 'no-repeat';
     height: 250px;
 }
 
@@ -752,7 +758,7 @@ section h2 {
   
 }
 .ai-chat h2 {
-  color: #f7f7f7d5;
+  color: #e7ba77d5;
   margin-bottom: 20px;
 }
 .chat-controls {
@@ -767,7 +773,7 @@ section h2 {
   max-width: 500px;
   padding: 14px;
   border-radius: 8px;
-  border: 2px solid rgba(0, 0, 0, 0.62);
+  border: 1px solid rgba(247, 222, 4, 0.62);
   background: rgba(20, 20, 20, 0.67);
   
   color: white;
@@ -778,7 +784,7 @@ section h2 {
   border-radius: 8px;
   background: rgba(20, 20, 20, 0.67);
   color: rgba(182, 182, 182, 1);
-  border: 2px solid rgba(0, 0, 0, 0.97);
+  border: 1px solid rgba(245, 170, 9, 0.97);
   font-weight: 700;
   cursor: pointer;
 }
@@ -1005,4 +1011,60 @@ section h2 {
     .social-icons {
         justify-content: center;
     }
+}
+
+/* --- REDES SOCIALES CON DESPLAZAMIENTO LATERAL --- */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-item {
+  position: relative;
+  display: inline-block;
+}
+
+.social-icon {
+  width: 60px;
+  height: 50px;
+  opacity: 1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Al hacer hover: ícono se mueve a la izquierda */
+.social-item:hover .social-icon {
+  opacity: 1;
+  transform: translateX(-30px);
+}
+
+.social-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background: rgba(2, 2, 2, 0.9);
+  color: orange; /* verde cian neón */
+  font-size:1rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  /* Inicialmente desplazado a la izquierda (oculto) */
+  transform: translateY(-0%) translateX(-0px);
+  transition: 
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* Al hacer hover: tooltip se desplaza a la derecha */
+.social-item:hover .social-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-150%) translateX(-50%);
 }
