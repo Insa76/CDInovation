@@ -104,7 +104,7 @@ img {
 
 .visual {
   background: black; /* Fondo oscuro */
-  width: 2000px;
+  width: 100%;
   height: 130px; 
   justify-content: center;
   margin-bottom: 20px;
@@ -257,6 +257,7 @@ section h1 {
   justify-content: center;
   overflow: hidden;
   background-image: url('images/matrix.jpeg'); 
+  border-bottom: 50px solid  #000000ff;
 }
 
 .hero-grid {
