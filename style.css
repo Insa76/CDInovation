@@ -39,6 +39,7 @@ body {
     background-repeat: no-repeat;
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
 }
 .container {
     max-width: 1100px;
@@ -98,7 +99,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  //ckground: black; /* Fondo oscuro */
   height: 500px;
 }
 
@@ -197,7 +197,7 @@ section h1 {
   width: 100%;
   padding: 14px;
   border-radius: 6px;
-  background: rgba(20, 20, 20, 0.85); /* Fondo azul muy claro */
+  background: rgba(20, 20, 20, 0.85); 
   color: #a3a3a3ff;
   font-family: 'Mina';
   font-size: 1rem;
@@ -256,7 +256,6 @@ section h1 {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  //padding: 0;
   background-image: url('images/matrix.jpeg'); 
 }
 
