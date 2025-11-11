@@ -3,237 +3,168 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Carlos Diego — Ayudo a empresas a crecer con tecnología inteligente.">
-    <title>Carlos Diego — Desarrollador Full Stack + IA</title>
+    <title>CDI Tech Soluciones — Desarrollador Full Stack + IA</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <script defer src="particles.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- HERO 
-    <header class="hero" id="inicio">
-    <div class="slat-container" id="slatContainer"></div>
-    <div class="hero-content">
-        <img src="/images/C1.jpg" alt="" class="hero-logo">
-        <h1 id="typed-text"></h1>
-        <div class="flip-hero-text" id="flipHeroText"></div>
-        <p>"Conectando ideas con inteligencia artificial"</p>
-        <a href="#contacto" class="btn">Contáctame</a>
-    </div>
-</header>-->
-
-<!-- HERO CON VIDEO EN BUCLE -->
-<header class="hero" id="inicio">
-     <div class="hero-grid">
-        <div class="hero-animation">
-         <video autoplay muted loop playsinline id="heroVideo">
-         <source src="images/hero.mp4" type="video/mp4">
-         Tu navegador no soporta videos HTML5.
-         </video>
-        </div>
-       <div class="hero-text">
-            <h1 id="typed-text"></h1>
-            <h1>Desarrollador Full Stack + Integraciones de IA</h1>
-            <a href="#contacto" class="btn">Contáctame</a>
-        </div>
-    </div>
-</header>
-
-    <!-- SERVICIOS -->
-<section class="services" id="servicios">
-    
-   <div class="services-grid">
-       
-        <!--eo autoplay muted loop playsinline id="SectionVideo">
-         <source src="images/Servicios.mp4" type="video/mp4">
-         Tu navegador no soporta videos HTML5.
-         </video>
-         Consultoría Técnica -->
-         
-        <div class="card tech-card">
-            
-            <h3>Consultoría Técnica</h3>
-            <p>Asesoramiento para transformar ideas en realidades digitales con IA.</p> 
-            <h3>Integraciones de IA</h3>
-            <p>Soluciones personalizadas con inteligencia artificial para tu negocio.</p> 
-            <h3>Desarrollo Full Stack</h3>
-            <p>Aplicaciones web modernas y escalables con tecnologías líderes.</p>
-            
-            <!--<img src="images/cti.jpeg" alt="Consultoría Técnica" class="service-image" width="400px">  -->      
-        </div>
-        </div>
-        <div class="visual">
-        <h2>Servicios</h2>
-    </div>
-    </div>
-</section>
-
-    <!-- SERVICIOS (solo video animado) 
-<section class="services" id="servicios">
-    <img src="images/Servicios.jpg" alt="CVV Dinámico - Seguridad Financiera" >
-</section>-->
-
-       <div class="visual-projects">
-            <h2>Proyectos Destacados</h2>
-        </div>
-
-    <!-- PROYECTOS -->
-    <section class="projects" id="proyectos">
-        
-            <!--<p class="lead">Resultados reales para clientes reales.</p>-->
-
-            <div class="project-cards">
-                 <div class="cardp">
-                   <img src="/projects/passhub/passhub.jpeg" alt="PassHub - Gestión de Eventos">
-                   <h3>PassHub</h3>
-                   <p>Plataforma de tickets con validación QR y geolocalización en tiempo real.</p>
-                 </div>
-               <div class="cardp">
-                 <img src="/projects/BarSync/barsync.jpeg" alt="BarSync - Gestión para Bares" >
-                 <h3>BarSync</h3>
-                 <p>Sistema de gestión para bares con métricas en vivo y control de inventario.</p>
-               </div>
-               <div class="cardp">
-                 <img src="projects/cvv/cvv.jpeg" alt="CVV Dinámico - Seguridad Financiera" >
-                 <h3>CVV Dinámico</h3>
-                 <p>Tarjeta de crédito con CVV cambiante para transacciones seguras.</p>
-               </div>
-               <div class="cardp">
-                 <img src="projects/TiendaRopa/tienda.jpeg" alt="CVV Dinámico - Seguridad Financiera" >
-                 <h3>Tienda de Ropa</h3>
-                 <p>Ropa con actitud. Moda con inteligencia.</p>
-               </div>
-               <div class="cardp">
-                 <img src="projects/UniAssist/uniassist.jpeg" alt="UniAssist - Asistente Universitario" >
-                 <h3>UniAssist</h3>
-                 <p>Asistente virtual para estudiantes universitarios con IA.</p>
-               </div>
-        
+    <!-- COLUMNA IZQUIERDA FIJA -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="logo">
+                <img src="images/logo1.png" alt="CDInnovation Logo">
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Sistema de Recomendación IA</h3>
-                        <p><strong>+35% conversiones</strong> para e-commerce de moda.</p>
-                    </div>
+            <h1>CDInnovation</h1>
+            <h1>Seeing the Future</h1>
+            <p>Desarrollador Full Stack + Integraciones de IA</p>
+        </div>
+        <div class="description">
+            
+              <p>Conectando ideas con soluciones inteligentes.</p>
+              <p>Procesos y sistemas inteligentes que generan valor real.</p>
+              <p>Aplicaciones web y móviles con tecnologías modernas e integraciones de IA.</p>
+              
+           
+        </div>
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p><strong>Email:</strong> chacodevinnovation@gmail.com</p>
+            <p><strong>WhatsApp:</strong> +54 9 362 474-5181</p>
+            <p><strong>Ubicación:</strong> Chaco, Argentina</p>
+        </div>
+        <!--<div class="social-links">
+            <a href="https://github.com/Insa76" target="_blank"><img src="images/github.jpeg" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank"><img src="images/link.jpeg" alt="LinkedIn"></a>
+            <a href="https://wa.me/5493624745181" target="_blank"><img src="images/wap.jpeg" alt="WhatsApp"></a>
+        </div>-->
+    </aside>
+
+    <!-- COLUMNA DERECHA ESCROLLEABLE -->
+    <main class="content">
+        <div class="hero-image">
+              <img src="images/hero2.jpeg" alt="Carlos Diego — Desarrollador Full Stack">
+            </div>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content-wrapper">
+            <div class="hero-content">     
+                <a href="#contacto" class="btn">CONTACT ME</a>
+            </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="services">
+            <h2>{ SERVICES }</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <!--<div class="icon"><img src="images/web.png" alt="Web Development"></div>-->
+                    <img src="images/web.jpeg" alt="Web Development">
+                    <h3>Desarrollo Web</h3>
+                    <p>Aplicaciones web modernas y escalables con React, Node.js y Python.</p>
                 </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Dashboard Predictivo</h3>
-                        <p><strong>-22% costos operativos</strong> en logística.</p>
-                    </div>
+                <div class="service-card">
+                    <!--<div class="icon"><img src="images/ia.png" alt="AI Integration"></div>-->
+                    <img src="images/ai.jpeg" alt="AI Integration">
+                    <h3>Integraciones de IA</h3>
+                    <p>Soluciones personalizadas con modelos de ML, NLP y recomendaciones.</p>
+                </div>
+                <div class="service-card">
+                    <!--<div class="icon"><img src="images/consultor.png" alt="Consulting"></div>-->
+                    <img src="images/consultoria.jpeg" alt="Consulting">
+                    <h3>Consultoría Técnica</h3>
+                    <p>Evaluación de viabilidad, prototipado rápido y roadmap para tu proyecto con IA.</p>
+                </div>
+                <div class="service-card">
+                    <!--<div class="icon"><img src="images/ux.png" alt="Consulting"></div> -->
+                    <img src="images/ux.jpeg" alt="Consulting">
+                    <h3>Diseño UX/UI</h3>
+                    <p>Creación de interfaces intuitivas y atractivas centradas en el usuario.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <div class="visual-chat">
-      <h1>Consulta con mi IA</h1>
-    </div>
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="projects">
+            <h2>{ PROJECT AREAS }</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/commerce.jpeg" alt="E-Commerce Platform">
+                    <h3>E-Commerce</h3>
+                    <p>Plataformas de tiendas online con pagos, inventario y análisis en tiempo real.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/saas.jpeg" alt="SaaS Dashboard">
+                    <h3>SaaS Dashboard</h3>
+                    <p>Paneles de control con visualización de datos en tiempo real y métricas clave.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/protect.jpeg" alt="FinTech Solutions">
+                    <h3>Protección de Compras</h3>
+                    <p>Sistemas de seguridad financiera con validación en tiempo real y fraud detection.</p>
+                </div>
+                <div class="project-card">
+                   <img src="images/soluciones.jpeg" alt="Asistente Educativo con IA">
+                   <h3>Soluciones Personalizables</h3>
+                   <p>Ideas que se transforman en soluciones personalizadas con IA.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- MINI CHAT IA (EFECTO FLIP COMO CARTELES DE AEROPUERTO) -->
-<section class="ai-chat" id="ai-chat">
-    
-    <div class="chat-controls">
-        <input type="text" id="userInput" placeholder="Describe tu proyecto..." />
-        <button id="sendBtn">Enviar</button>
-    </div>
-    <div class="flip-display" id="flipDisplay"></div>
-    <p class="chat-disclaimer">
-        <!--<em>💡 Demo: respuestas simuladas con efecto visual tipo cartel mecánico.</em>-->
-    </p>
-</section>
-
-    <!-- CONTACTO -->
-
-        <div class="visual-projects">
-          <h2>¿Listo para transformar tu idea en realidad?</h2>
-        </div>
-   <section class="contact" id="contacto">
-    <div class="container-contact">
-        <p class="lead">Agendá una llamada gratuita de 30 minutos. Sin compromiso.</p>
-        <div class="contact-content">
-            <!-- Formulario -->
-            <form id="contactForm" class="contact-form">
+        
+        <!-- CONTACTO -->
+<section class="contact" id="contacto">
+    <h2>CONNECT . ></h2>
+    <div class="contact-grid">
+        <div class="contact-form-wrapper">
+            <form id="contactForm">
                 <input type="text" name="nombre" placeholder="Tu nombre" required />
                 <input type="email" name="email" placeholder="Tu email" required />
-                <textarea name="mensaje" placeholder="Contame sobre tu proyecto..." required></textarea>
-                <button type="submit" class="btn btn-primary">Enviar y agendar</button>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn">Enviar</button>
             </form>
-
-            <!-- Información de contacto 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <img src="/images/mail.svg" height="24" width="24" alt="Email">
-                    <a href="mailto:carlos@tudominio.com">CDInovation@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <img src="/images/wp.svg" height="24" width="24" alt="WhatsApp">
-                    <a href="https://wa.me/5493624745181" target="_blank">Enviar mensaje por WhatsApp</a>
-                </div>
-            </div>-->
-
-            <!-- Desarrollo Full Stack -->
-        <div class="card tech-card">
-            <h3>Tecnologías de Desarrollo</h3>
-           <div class="stack-icons">
-            <img src="images/stack-icons/react.png" alt="React" title="React" >
-            <img src="images/stack-icons/node.png" alt="Node.js" title="Node.js" >
-            <img src="images/stack-icons/python.png" alt="Python" title="Python" >
-            <img src="images/stack-icons/mongo.png" alt="MongoDB" title="MongoDB" >
-            <img src="images/stack-icons/tensor.png" alt="TensorFlow" title="TensorFlow" >
-            <img src="images/stack-icons/docker.png" alt="TensorFlow" title="Docker" >
-            
-          </div>
         </div>
+        <div class="contact-image-wrapper">
+            <img src="images/contacto3.jpeg" alt="Carlos Diego">
         </div>
     </div>
 </section>
 
-    <footer class="footer">
-        <div class="footer-overlay">
-        <!-- Redes sociales -->
-            <div class="social-links">
-                <h2>Sígueme</h2>
-                <div class="social-icons">
-                  <div class="social-item">
-                    <a href="https://www.instagram.com/chacodevinnovation/" target="_blank" aria-label="Instagram">
-                    <img src="images/insta.jpeg" alt="Instagram" class="social-icon">
-                    </a>
-                    <span class="social-tooltip">ChacoDevInnovation</span>
-                  </div>
-                  <div class="social-item">
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
-                    <img src="images/link.jpeg" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <span class="social-tooltip">linkedin.com/in/tu-perfil</span>
-                  </div>
-                  <div class="social-item">
-                    <a href="https://github.com/Insa76" target="_blank" aria-label="GitHub">
-                    <img src="images/github.jpeg" alt="GitHub" class="social-icon">
-                    </a>
-                    <span class="social-tooltip">github.com/Insa76</span>
-                  </div>
-                  <div class="social-item">
-                    <a href="https://wa.me/5493624745181" target="_blank" aria-label="WhatsApp">
-                    <img src="images/wap.jpeg" alt="WhatsApp" class="social-icon">
-                    </a>
-                    <span class="social-tooltip">wa.me/5493624745181</span>
-                  </div>
-                  <div class="social-item">
-                    <a href="https://chacodevinnovation@gmail.com" target="_blank" aria-label="Correo">
-                    <img src="images/correo.jpeg" alt="Correo" class="social-icon">
-                    </a>
-                    <span class="social-tooltip">chacodevinnovation@gmail.com</span>
-                  </div>
-               </div>
-            </div>
-        <div class="container-footer">
-            <p>© 2025 Carlos Diego. Todos los derechos reservados.</p>
-        </div>
-        </div>
-    </footer>
+        <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>CDInnovation</h3>
+      <p>Desarrollador Full Stack + Integraciones de IA.</p>
+      <p>Conectando ideas con inteligencia artificial.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Conectate</h4>
+      <div class="social-icons">
+        <a href="https://github.com/Insa76" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+        <a href="https://www.gmail.com" target="_blank"><img src="images/correo.png" alt="Gmail"></a>
+        <a href="https://www.instagram.com/chacodevinnovation" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 CDInnovation. Todos los derechos reservados.</p>
+  </div>
+</footer>
+    </main>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5493624745181" target="_blank" id="whatsapp-btn">💬</a>
 </body>
 </html>
